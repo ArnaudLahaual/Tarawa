@@ -1936,6 +1936,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@chakra-ui/icons@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "@chakra-ui/icons@npm:2.1.1"
+  dependencies:
+    "@chakra-ui/icon": 3.2.0
+  peerDependencies:
+    "@chakra-ui/system": ">=2.0.0"
+    react: ">=18"
+  checksum: b7acf209bcb8f40494e5be64195c1f6b6d31bd425342731892b577ded6b3d02bc0399be18c3c503cf19086d1b89bcda71a3570c797a5c1b09bd5de997cee359b
+  languageName: node
+  linkType: hard
+
 "@chakra-ui/image@npm:2.1.0":
   version: 2.1.0
   resolution: "@chakra-ui/image@npm:2.1.0"
@@ -5829,7 +5841,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chokidar@npm:^3.4.2, chokidar@npm:^3.5.3":
+"chokidar@npm:>=3.0.0 <4.0.0, chokidar@npm:^3.4.2, chokidar@npm:^3.5.3":
   version: 3.5.3
   resolution: "chokidar@npm:3.5.3"
   dependencies:
@@ -8750,6 +8762,13 @@ __metadata:
   version: 9.0.21
   resolution: "immer@npm:9.0.21"
   checksum: 70e3c274165995352f6936695f0ef4723c52c92c92dd0e9afdfe008175af39fa28e76aafb3a2ca9d57d1fb8f796efc4dd1e1cc36f18d33fa5b74f3dfb0375432
+  languageName: node
+  linkType: hard
+
+"immutable@npm:^4.0.0":
+  version: 4.3.4
+  resolution: "immutable@npm:4.3.4"
+  checksum: de3edd964c394bab83432429d3fb0b4816b42f56050f2ca913ba520bd3068ec3e504230d0800332d3abc478616e8f55d3787424a90d0952e6aba864524f1afc3
   languageName: node
   linkType: hard
 
@@ -13142,6 +13161,43 @@ __metadata:
   languageName: node
   linkType: hard
 
+"sass-loader@npm:^13.3.2":
+  version: 13.3.2
+  resolution: "sass-loader@npm:13.3.2"
+  dependencies:
+    neo-async: ^2.6.2
+  peerDependencies:
+    fibers: ">= 3.1.0"
+    node-sass: ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0
+    sass: ^1.3.0
+    sass-embedded: "*"
+    webpack: ^5.0.0
+  peerDependenciesMeta:
+    fibers:
+      optional: true
+    node-sass:
+      optional: true
+    sass:
+      optional: true
+    sass-embedded:
+      optional: true
+  checksum: 7394a8d1b818a289b9caabd979543c907b83e28ae08bc80ccb836e0ccabc4ae574c077ab2fa520ba5fb8abb2ec3e7c9822a1cbd8c58a28ff30018be9d1dc6c27
+  languageName: node
+  linkType: hard
+
+"sass@npm:^1.69.0":
+  version: 1.69.0
+  resolution: "sass@npm:1.69.0"
+  dependencies:
+    chokidar: ">=3.0.0 <4.0.0"
+    immutable: ^4.0.0
+    source-map-js: ">=0.6.2 <2.0.0"
+  bin:
+    sass: sass.js
+  checksum: eabea31ea3b1dd529c7eff345c8b6468afe6ab8011bd4f95caa2cffb8fb115cc055ea21de425be6197f7ed22516f5652eccb98d315d592ea152ada553f964b8a
+  languageName: node
+  linkType: hard
+
 "sax@npm:~1.2.4":
   version: 1.2.4
   resolution: "sax@npm:1.2.4"
@@ -13461,7 +13517,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"source-map-js@npm:^1.0.1, source-map-js@npm:^1.0.2":
+"source-map-js@npm:>=0.6.2 <2.0.0, source-map-js@npm:^1.0.1, source-map-js@npm:^1.0.2":
   version: 1.0.2
   resolution: "source-map-js@npm:1.0.2"
   checksum: c049a7fc4deb9a7e9b481ae3d424cc793cb4845daa690bc5a05d428bf41bf231ced49b4cf0c9e77f9d42fdb3d20d6187619fc586605f5eabe995a316da8d377c
@@ -14025,6 +14081,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "tarawa-project@workspace:."
   dependencies:
+    "@chakra-ui/icons": ^2.1.1
     "@chakra-ui/react": ^2.8.1
     "@emotion/react": ^11.11.1
     "@emotion/styled": ^11.11.0
@@ -14036,7 +14093,10 @@ __metadata:
     react: ^18.2.0
     react-dom: ^18.2.0
     react-scripts: 5.0.1
+    sass: ^1.69.0
+    sass-loader: ^13.3.2
     web-vitals: ^2.1.0
+    webpack: ^5.88.2
   languageName: unknown
   linkType: soft
 
@@ -14810,7 +14870,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"webpack@npm:^5.64.4":
+"webpack@npm:^5.64.4, webpack@npm:^5.88.2":
   version: 5.88.2
   resolution: "webpack@npm:5.88.2"
   dependencies:
