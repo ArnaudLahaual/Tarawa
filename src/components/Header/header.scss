@@ -1,5 +1,28 @@
 .header {
-    background-color: red;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    position: sticky;
+
+    &__booking {
+        background-color: #00B5B5;
+        width: 35%;
+        padding: 2px;
+        margin: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s; 
+    }
+
+    &__booking:hover {
+        background-color: #78dbdb;
+        width: 35%;
+        padding: 2px;
+        margin: 10px;
+        border-radius: 5px;
+    }
+
+    &__burger {
+        padding: 2px;
+        margin: 10px;
+    }
 }
